@@ -1,0 +1,7 @@
+<div class="content">
+  <div class="container">
+    <label for="password">Ingresá la contraseña por favor</label>
+    <input type="text" [(ngModel)]="password" name="password" placeholder="Contraseña" (keydown.enter)="logPassword()">
+    <button (click)="logPassword()">Ir</button>
+  </div>
+</div>
