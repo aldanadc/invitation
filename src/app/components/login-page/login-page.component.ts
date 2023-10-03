@@ -23,8 +23,8 @@ export class LoginPageComponent implements OnInit {
   }
 
   logPassword() {
-    if (this.password === this.correctPass) {
-      sessionStorage.setItem('password', this.password);
+    if (this.password.toLowerCase() === this.correctPass) {
+      sessionStorage.setItem('password', this.password.toLowerCase());
       this.navigateToInvitation();
     }else {
       this.password = '';
