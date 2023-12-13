@@ -7,10 +7,8 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { MainPageComponent } from './components/main-page/main-page.component';
 
 @NgModule({
-  declarations: [
-    MainPageComponent
-  ],
   imports: [
+    MainPageComponent,
     AppComponent,
     LoginPageComponent,
     BrowserModule,

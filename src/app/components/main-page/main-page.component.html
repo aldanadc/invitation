@@ -5,7 +5,9 @@
     <img src="assets/images/photo.jpg">
   </div>
 
-  <p class="countdown">¡Faltan {{-difference}} días!</p>
+  <p *ngIf="difference < 0" class="countdown">¡Faltan {{-difference}} días!</p>
+  <p *ngIf="difference === 0" class="countdown">¡Es hoy! Te esperamos</p>
+  <p *ngIf="difference > 0" class="countdown">¡Gracias por estar! Esperamos que lo hayas pasado muy bien.</p>
 
   <div class="card">
     <div class="stars">
@@ -21,6 +23,7 @@
       <h2 class="info">Info útil</h2>
       <ul class="list">
         <li> ❤️ <span class="question">¿Hay código de vestimenta?</span> La verdad es que no, vení como te sientas más cómodo/a.</li>
+        <li> ❤️ <span class="question">¡Hay pileta para los peques!</span> Los chicos podrán meterse a la pile. Recordar traer malla, toalla, protector solar, etc.</li>
         <li> ❤️ <span class="question">¿Tengo que confirmar asistencia?</span> Sí, por favor, cuanto antes mejor, tanto por sí como por no.</li>
         <li> ❤️ <span class="question">¿Cuánto dura el evento?</span> Aproximadamente hasta las 18hs. </li>
         <li> ❤️ <span class="question">¿Hay estacionamiento si voy con auto?</span> Sí, no hay problemas para estacionar en el lugar.</li>
